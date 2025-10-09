@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Smartbook - AudioBook</title>
+  <link rel="stylesheet" href="plyr.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="ID-0-66-Couverture.jpg" alt="Couverture" style="width: 20%; height: auto; margin-bottom: 20px;">
+
+  <div class="logos">
+    <img src="PLANCHE-1a.jpg" alt="Logo AudioBook" style="width: 5%; height: auto; margin-bottom: 20px;">
+    <img src="Logo_resized.jpg" alt="Logo Encyclo-AI" style="width: 10%; height: auto; margin-bottom: 20px;">
+  </div>
+
+<!-- Bloc bouton Play + potentiomètre vitesse -->
+<div class="player-controls">
+  <!-- Gros bouton Play -->
+  <button id="bigPlayBtn" aria-label="Lire ou mettre en pause le livre audio">▶</button>
+
+  <!-- Bloc vitesse -->
+  <div id="speedControl">
+    <div class="speed-label">Vitesse</div>
+    <div class="speed-knob-wrapper">
+      <input type="range" id="speedKnob" min="0.9" max="1.1" step="0.05" value="1" orient="vertical">
+
+      <!-- Colonne repères alignés -->
+      <div id="speedLabels">
+        <span>++</span>
+        <span>+</span>
+        <span>=</span>
+        <span>-</span>
+        <span>--</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Lecteur audio -->
+  <audio id="audioPlayer" controls></audio>
+
+  <!-- Playlist -->
+  <ul id="playlist">
+    <li><a href="Introduction.mp3" style="font-weight: bold;">INTRODUCTION - L'ÈRE DE LA TRANSFORMATION HUMAINE</a></li>
+
+    <li style="font-weight: bold;">Chapitre 1 - INTRODUCTION AU TRANSHUMANISME: HISTORIQUE ET DÉFINITION</li>
+    <ul>
+      <li><a href="Chapitre1-1.mp3">1.1 - Origines du Transhumanisme</a></li>
+      <li><a href="Chapitre1-2.mp3">1.2 - Définition et Principes Fondamentaux</a></li>
+      <li><a href="Chapitre1-3.mp3">1.3 - Évolution du Mouvement au XXIe Siècle</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 2 - TECHNOLOGIES DE POINTE ET AMÉLIORATION HUMAINE</li>
+    <ul>
+      <li><a href="Chapitre2-1.mp3">2.1 - Ingénierie Génétique et Modification du Génome</a></li>
+      <li><a href="Chapitre2-2.mp3">2.2 - Implants Cérébraux et Interfaces Homme-Machine</a></li>
+      <li><a href="Chapitre2-3.mp3">2.3 - Prothèses Bioniques et Augmentation Physique</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 3 - FIGURES CLÉS ET INSTITUTIONS DU TRANSHUMANISME</li>
+    <ul>
+      <li><a href="Chapitre3-1.mp3">3.1 - FM-2030 et les Pionniers du Mouvement</a></li>
+      <li><a href="Chapitre3-2.mp3">3.2 - H+ et la Promotion du Transhumanisme</a></li>
+      <li><a href="Chapitre3-3.mp3">3.3 - SU et l'Innovation Technologique</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 4 - ÉTHIQUE ET CONTROVERSES: DÉBATS AUTOUR DU TRANSHUMANISME</li>
+    <ul>
+      <li><a href="Chapitre4-1.mp3">4.1 - Inégalités Sociales et Accès aux Technologies</a></li>
+      <li><a href="Chapitre4-2.mp3">4.2 - Nature Humaine et Identité</a></li>
+      <li><a href="Chapitre4-3.mp3">4.3 - Domination Technologique et Liberté Individuelle</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 5 - INNOVATIONS TECHNOLOGIQUES: CAS PRATIQUES ET EXEMPLES</li>
+    <ul>
+      <li><a href="Chapitre5-1.mp3">5.1 - Applications Médicales des Technologies Transhumanistes</a></li>
+      <li><a href="Chapitre5-2.mp3">5.2 - Technologies pour l'Amélioration Cognitive</a></li>
+      <li><a href="Chapitre5-3.mp3">5.3 - Exemples d'Augmentation Physique dans le Sport</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 6 - LES LIMITES DE LA MODIFICATION HUMAINE: UN DÉBAT ÉTHIQUE</li>
+    <ul>
+      <li><a href="Chapitre6-1.mp3">6.1 - Acceptabilité des Modifications Génétiques</a></li>
+      <li><a href="Chapitre6-2.mp3">6.2 - Impact sur la Diversité Humaine</a></li>
+      <li><a href="Chapitre6-3.mp3">6.3 - Risque de Déshumanisation</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 7 - IMPACTS SOCIAUX ET ÉCONOMIQUES DES TECHNOLOGIES TRANSHUMANISTES</li>
+    <ul>
+      <li><a href="Chapitre7-1.mp3">7.1 - Inégalités Économiques et Accès aux Technologies</a></li>
+      <li><a href="Chapitre7-2.mp3">7.2 - Transformation du Marché du Travail</a></li>
+      <li><a href="Chapitre7-3.mp3">7.3 - Impacts sur les Relations Sociales</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 8 - L'AVENIR DE L'HUMANITÉ: PERSPECTIVES ET SCÉNARIOS</li>
+    <ul>
+      <li><a href="Chapitre8-1.mp3">8.1 - Scénarios Optimistes pour le Futur</a></li>
+      <li><a href="Chapitre8-2.mp3">8.2 - Risques et Dystopies Potentielles</a></li>
+      <li><a href="Chapitre8-3.mp3">8.3 - Rôle de la Régulation et de l'Éthique</a></li>
+    </ul>
+
+    <li><a href="Conclusion.mp3" style="font-weight: bold;">CONCLUSION - VERS UN FUTUR TRANSCENDANT</a></li>
+  </ul>
+
+  <p><a href="ID-0-66-Annexes.pdf" target="_blank">📄 Consulter les annexes du livre</a></p>
+  <p><a href="mentions_legales.pdf">Mentions légales</a></p>
+
+  <script src="plyr.polyfilled.js"></script>
+  <script src="lecteur.js"></script>
+</body>
+</html>
